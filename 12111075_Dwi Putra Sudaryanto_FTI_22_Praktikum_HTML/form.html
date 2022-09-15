@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Form</title>
+<head>
+<body>
+	<div align="center">
+		<p><strong>Form Registrasi</strong></p>
+		<form>
+			<table border="0" width="428" height="174">
+				<tr bgcolor="#ffccff">
+					<td>Nama</td>
+					<td>:</td>
+					<td><input type="text" name="nama" size="40"></td>
+				</tr>
+				<tr>
+					<td>Alamat</td>
+					<td>:</td>
+					<td><textarea name="alamat" cols="30" rows="40"></textarea></td>
+				</tr>
+				<tr bgcolor="#ffccff">
+					<td>Jenis Kelamin</td>
+					<td>:</td>
+					<td>
+						<input type="radio" name="kelamin" value="1" checked>female <br/>
+						<input type="radio" name="kelamin" value="2">male
+					</td>
+				</tr>
+				<tr>
+					<td>Pekerjaan</td>
+					<td>:</td>
+					<td>
+						<select name="pekerjaan" id="pekerjaan">
+							<option>mahasiswa</option>
+							<option>dosen</option>
+							<option>wartawan</option>
+							<option>wiraswasta</option>
+						</select>
+					</td>
+				</tr>
+				<tr bgcolor="#ffccff">
+					<td>Tinggi Badan</td>
+					<td>:</td>
+					<td><input type="text" name="tb" size="15"></td>
+				</tr>
+				<tr>
+					<td>Berat Badan</td>
+					<td>:</td>
+					<td><input type="text" name="bb" size="15"></td>
+				</tr>
+				<tr bgcolor="#ffccff">
+					<td>Hobi</td>
+					<td>:</td>
+					<td>
+						<input type="checkbox" name="hobi" velue="1">basket <br/>
+						<input type="checkbox" name="hobi" velue="1">Renang <br/>
+						<input type="checkbox" name="hobi" velue="1">voli <br/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<input type="submit" name="tmblkirim" value="kirim">
+						<input type="submit" name="tmblcancel" value="cancel">
+					</td>
+				</tr>
+			</table>	
+		</form>
+	</div>
+</body>
+</html>

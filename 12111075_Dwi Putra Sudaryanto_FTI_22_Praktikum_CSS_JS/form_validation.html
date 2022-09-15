@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Internal Javascript - Section Head</title>
+	<script type="text/javascript">
+		<!-- meyembunyikan kode dari browser non-js //-->
+		function validasiForm() {
+			formObject = document.contoh;
+			if(formObject.username.value == '' || formObject.password.value == '') {
+				alert('Username dan Password tidak boleh kosong');
+				return false;
+			} else if(formObject.username.value == 'beta' || formObject.password.value == 'rahasia') {
+				window.location.href = 'external_js.html';
+			} else {
+				alert('Username dan Password tidak cocok');
+				return false;					
+			}
+		}
+	</script>	
+<head>
+<body>
+	<form name="contoh" method="post" action="" onSubmit="return validasiForm()">
+		<table>
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="username" size="30"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password" size="30"></td>
+			</tr>
+			<tr>
+				<td align="left" colspan="2">
+					<input type="submit" value="Submit">
+					<input type="reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

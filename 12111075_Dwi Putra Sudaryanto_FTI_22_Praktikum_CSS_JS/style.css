@@ -1,0 +1,16 @@
+body {
+	font-family: sains-serif;
+	font-size: 14px;
+	color: #ff0000;
+	background-color: #cccccc;
+}
+td {
+	background-color: #00ff99;
+}
+h1 {
+	color: #000000;
+	right: auto;
+}
+.menu {
+	background-color: #009900;
+}
